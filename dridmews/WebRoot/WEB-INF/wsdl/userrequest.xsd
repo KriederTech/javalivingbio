@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.gmg.com/UserRequest/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/UserRequest/1.0">
+	<xs:element name="UserRequest" type="tns:UserRequest"/>
+	<xs:complexType name="UserRequest">
+		<xs:sequence>
+			<xs:element name="username" type="xs:string"/>
+			<xs:element name="type" type="xs:string"/>
+			<xs:element name="accountinfo" type="tns:accountinfo"/>
+			<xs:element minOccurs="0" name="addressinfo" type="tns:addressinfo"/>
+			<xs:element name="personalinfo" type="tns:personalinfo"/>
+			<xs:element name="userId" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="accountinfo">
+		<xs:sequence>
+			<xs:element name="accountexpired" type="xs:boolean"/>
+			<xs:element name="accountlocked" type="xs:boolean"/>
+			<xs:element minOccurs="0" name="credentialsexpired" type="xs:boolean"/>
+			<xs:element name="accountenabled" type="xs:boolean"/>
+			<xs:element name="accountid" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="addressinfo">
+		<xs:sequence>
+			<xs:element name="address" type="xs:string"/>
+			<xs:element name="city" type="xs:string"/>
+			<xs:element name="country" type="xs:string"/>
+			<xs:element name="province" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="personalinfo">
+		<xs:sequence>
+			<xs:element name="firsName" type="xs:string"/>
+			<xs:element name="lastName" type="xs:string"/>
+			<xs:element minOccurs="0" name="height" type="xs:double"/>
+			<xs:element minOccurs="0" name="weight" type="xs:double"/>
+			<xs:element minOccurs="0" name="age" type="xs:integer"/>
+			<xs:element minOccurs="0" name="phonenumber" type="xs:string"/>
+			<xs:element name="email" type="xs:string"/>
+			<xs:element minOccurs="0" name="website" type="xs:string"/>
+			<xs:element minOccurs="0" name="birthdate" type="xs:string"/>
+			<xs:element minOccurs="0" name="gender" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

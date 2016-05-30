@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.gmg.com/UpdateMedicalConditionsResponse/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/UpdateMedicalConditionsResponse/1.0">
+	<xs:element name="UpdateMedicalConditionsResponse" type="tns:UpdateMedicalConditionsResponse"/>
+	<xs:complexType name="UpdateMedicalConditionsResponse">
+		<xs:sequence>
+			<xs:element name="response" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.gmg.com/MedicalRecords/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/MedicalRecords/1.0">
+	<xs:element name="MedicalRecords" type="tns:MedicalRecords"/>
+	<xs:complexType name="MedicalRecords">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="MedicalRecord" type="tns:MedicalRecord"/>
+			<xs:element name="userId" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MedicalRecord">
+		<xs:sequence>
+			<xs:element name="document" type="xs:string"/>
+			<xs:element name="doc_id" type="xs:string"/>
+			<xs:element name="doc_name" type="xs:string"/>
+			<xs:element name="doc_date" type="xs:string"/>
+			<xs:element name="doc_caption" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://services.gmg.com/InsertMedicalConditionRequest/1.0" xmlns:tns="http://services.gmg.com/MedicalConditions/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/InsertMedicalConditionRequest/1.0">
+	<xs:import namespace="http://services.gmg.com/MedicalConditions/1.0" schemaLocation="medicalconditions.xsd"/>
+	<xs:element name="InsertMedicalConditionRequest" type="ns:InsertMedicalConditionRequest"/>
+	<xs:complexType name="InsertMedicalConditionRequest">
+		<xs:sequence>
+			<xs:element name="MedicalConditions" type="tns:MedicalConditions"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

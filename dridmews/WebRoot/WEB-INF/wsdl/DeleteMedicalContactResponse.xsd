@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.gmg.com/DeleteMedicalContactResponse/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/DeleteMedicalContactResponse/1.0">
+	<xs:element name="DeleteMedicalContactResponse" type="tns:DeleteMedicalContactResponse"/>
+	<xs:complexType name="DeleteMedicalContactResponse">
+		<xs:sequence>
+			<xs:element name="response" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

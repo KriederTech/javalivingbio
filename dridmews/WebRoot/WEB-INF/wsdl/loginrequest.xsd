@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.gmg.com/LoginRequest/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/LoginRequest/1.0">
+	<xs:element name="LoginRequest" type="tns:LoginRequest"/>
+	<xs:complexType name="LoginRequest">
+		<xs:sequence>
+			<xs:element name="userid" type="xs:string"/>
+			<xs:element name="password" type="xs:string"/>
+			<xs:element name="tmp_password" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

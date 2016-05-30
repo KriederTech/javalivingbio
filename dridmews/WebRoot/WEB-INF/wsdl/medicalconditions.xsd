@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.gmg.com/MedicalConditions/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/MedicalConditions/1.0">
+	<xs:element name="MedicalConditions" type="tns:MedicalConditions"/>
+	<xs:complexType name="MedicalConditions">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="MedicalCondition" type="tns:MedicalCondition"/>
+			<xs:element name="userId" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MedicalCondition">
+		<xs:sequence>
+			<xs:element name="condition" type="xs:string"/>
+			<xs:element name="status" type="xs:string"/>
+			<xs:element name="onset" type="xs:string"/>
+			<xs:element name="details" type="xs:string"/>
+			<xs:element name="id" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

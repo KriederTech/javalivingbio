@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.gmg.com/MedicalContacts/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/MedicalContacts/1.0">
+	<xs:element name="MedicalContacts" type="tns:MedicalContacts"/>
+	<xs:complexType name="MedicalContacts">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="MedicalContact" type="tns:MedicalContact"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="HospitalContact" type="tns:HospitalContact"/>
+			<xs:element name="userId" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MedicalContact">
+		<xs:sequence>
+			<xs:element name="first_name" type="xs:string"/>
+			<xs:element name="last_name" type="xs:string"/>
+			<xs:element name="doctor_type" type="xs:string"/>
+			<xs:element name="doctor_id" type="xs:string"/>
+			<xs:element minOccurs="0" name="address" type="tns:address"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="HospitalContact">
+		<xs:sequence>
+			<xs:element name="hospital_type" type="xs:string"/>
+			<xs:element name="hospital_name" type="xs:string"/>
+			<xs:element name="hospital_id" type="xs:string"/>
+			<xs:element minOccurs="0" name="address" type="tns:address"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="address">
+		<xs:sequence>
+			<xs:element name="address1" type="xs:string"/>
+			<xs:element name="address2" type="xs:string"/>
+			<xs:element name="city" type="xs:string"/>
+			<xs:element name="state" type="xs:string"/>
+			<xs:element name="zipCode" type="xs:string"/>
+			<xs:element name="phone" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

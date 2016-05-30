@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="dridmews">
+        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="commons-codec-1.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Lasana/Downloads/Attachments_2014731/commons-codec-1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Lasana/Downloads/Attachments_2014731/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-cli-2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Lasana/Downloads/Attachments_2014731/commons-cli-2.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.sun.mail_1.4.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Lasana/Downloads/Attachments_2014731/com.sun.mail_1.4.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.7.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib///LCLAPTOP-PC/software/slf4j-api-1.7.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-ext-1.7.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib///LCLAPTOP-PC/software/slf4j-ext-1.7.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-jcl-1.7.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib///LCLAPTOP-PC/software/slf4j-jcl-1.7.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-log4j12-1.7.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib///LCLAPTOP-PC/software/slf4j-log4j12-1.7.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/dridmews/build/classes"/>
+        <property name="context-root" value="/dridmews"/>
+    </wb-module>
+</project-modules>

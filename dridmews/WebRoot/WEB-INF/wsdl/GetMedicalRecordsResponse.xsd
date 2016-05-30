@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://services.gmg.com/GetMedicalRecordsResponse/1.0" xmlns:tns="http://services.gmg.com/MedicalRecords/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/GetMedicalRecordsResponse/1.0">
+	<xs:import namespace="http://services.gmg.com/MedicalRecords/1.0" schemaLocation="medicalrecords.xsd"/>
+	<xs:element name="GetMedicalRecordsResponse" type="ns:GetMedicalRecordsResponse"/>
+	<xs:complexType name="GetMedicalRecordsResponse">
+		<xs:sequence>
+			<xs:element name="MedicalRecords" type="tns:MedicalRecords"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

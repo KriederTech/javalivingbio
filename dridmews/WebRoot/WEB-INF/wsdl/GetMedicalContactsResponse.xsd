@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://services.gmg.com/GetMedicalContactsResponse/1.0" xmlns:tns="http://services.gmg.com/MedicalContacts/1.0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/GetMedicalContactsResponse/1.0">
+	<xs:import namespace="http://services.gmg.com/MedicalContacts/1.0" schemaLocation="medicalcontacts.xsd"/>
+	<xs:element name="GetMedicalContactsResponse" type="ns:GetMedicalContactsResponse"/>
+	<xs:complexType name="GetMedicalContactsResponse">
+		<xs:sequence>
+			<xs:element name="MedicalContacts" type="tns:MedicalContacts"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

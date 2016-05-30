@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by TIBCO WSDL-->
+<wsdl:definitions xmlns:ns="http://services.gmg.com/DeleteMedicalContactRequest/1.0" xmlns:ns1="http://services.gmg.com/DeleteMedicalContactResponse/1.0" xmlns:ns10="http://services.gmg.com/GetUserRequest/1.0" xmlns:ns11="http://services.gmg.com/UserResponse/1.0" xmlns:ns12="http://services.gmg.com/DeleteMedicalConditionRequest/1.0" 
+                  xmlns:ns13="http://services.gmg.com/DeleteMedicalConditionResponse/1.0" xmlns:ns14="http://services.gmg.com/InsertMedicalContactRequest/1.0" xmlns:ns15="http://services.gmg.com/InsertMedicalContactResponse/1.0" xmlns:ns16="http://services.gmg.com/UserRequest/1.0" 
+				  xmlns:ns17="http://services.gmg.com/UpdateUserResponse/1.0" xmlns:ns18="http://services.gmg.com/GetMedicalRecordsRequest/1.0" xmlns:ns19="http://services.gmg.com/GetMedicalRecordsResponse/1.0" xmlns:ns2="http://services.gmg.com/GetMedicalContactsRequest/1.0" xmlns:ns20="http://services.gmg.com/GetMedicalConditionsRequest/1.0" 
+				  xmlns:ns21="http://services.gmg.com/GetMedicalConditionsResponse/1.0" xmlns:ns22="http://services.gmg.com/InsertMedicalConditionRequest/1.0" xmlns:ns23="http://services.gmg.com/InsertMedicalConditionResponse/1.0" xmlns:ns24="http://services.gmg.com/UpdateMedicalContactRequest/1.0" 
+				  xmlns:ns25="http://services.gmg.com/UpdateMedicalContactResponse/1.0" xmlns:ns26="http://piglet.healthcodex.com/ChangePasswordRequest/1.0" xmlns:ns27="http://piglet.healthcodex.com/ChangePasswordResponse/1.0" xmlns:ns28="http://piglet.healthcodex.com/ResetPasswordRequest/1.0"
+				  xmlns:ns29="http://piglet.healthcodex.com/ResetPasswordResponse/1.0"
+				  xmlns:ns3="http://services.gmg.com/GetMedicalContactsResponse/1.0" xmlns:ns4="http://services.gmg.com/InsertMedicalRecordRequest/1.0" xmlns:ns5="http://services.gmg.com/InsertMedicalRecordResponse/1.0" xmlns:ns6="http://services.gmg.com/UpdateMedicalConditionsRequest/1.0" 
+				  xmlns:ns7="http://services.gmg.com/UpdateMedicalConditionsResponse/1.0" xmlns:ns8="http://services.gmg.com/LoginRequest/1.0" xmlns:ns9="http://services.gmg.com/LoginResponse/1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.example.com/1399970793097" 
+				  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="Untitled" targetNamespace="http://xmlns.example.com/1399970793097">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/GetMedicalRecordsRequest/1.0">
+            <xs:include schemaLocation="GetMedicalRecords.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/UpdateMedicalContactResponse/1.0">
+            <xs:include schemaLocation="UpdateMedicalContactResponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/DeleteMedicalContactRequest/1.0">
+            <xs:include schemaLocation="DeleteMedicalContactRequest.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/GetMedicalContactsResponse/1.0">
+            <xs:include schemaLocation="GetMedicalContactsResponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/UpdateMedicalContactRequest/1.0">
+            <xs:include schemaLocation="UpdateMedicalContactRequest.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/LoginRequest/1.0">
+            <xs:include schemaLocation="loginrequest.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/InsertMedicalContactRequest/1.0">
+            <xs:include schemaLocation="InsertMedicalContactRequest.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/GetMedicalContactsRequest/1.0">
+            <xs:include schemaLocation="GetMedicalContacts.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/DeleteMedicalContactResponse/1.0">
+            <xs:include schemaLocation="DeleteMedicalContactResponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/UserRequest/1.0">
+            <xs:include schemaLocation="userrequest.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/GetMedicalConditionsResponse/1.0">
+            <xs:include schemaLocation="GetMedicalConditionsResponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/InsertMedicalConditionRequest/1.0">
+            <xs:include schemaLocation="InsertMedicalConditionsRequest.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/GetMedicalConditionsRequest/1.0">
+            <xs:include schemaLocation="GetMedicalConditionsRequest.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/LoginResponse/1.0">
+            <xs:include schemaLocation="loginresponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/DeleteMedicalConditionRequest/1.0">
+            <xs:include schemaLocation="DeleteMedicalConditionsRequest.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/InsertMedicalRecordResponse/1.0">
+            <xs:include schemaLocation="InsertMedicalRecordResponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/InsertMedicalRecordRequest/1.0">
+            <xs:include schemaLocation="InsertMedicalRecordRequest.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/UserResponse/1.0">
+            <xs:include schemaLocation="userresponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/UpdateUserResponse/1.0">
+            <xs:include schemaLocation="UpdateUserResponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/GetMedicalRecordsResponse/1.0">
+            <xs:include schemaLocation="GetMedicalRecordsResponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/DeleteMedicalConditionResponse/1.0">
+            <xs:include schemaLocation="DeleteMedicalConditionsResponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/GetUserRequest/1.0">
+            <xs:include schemaLocation="GetUserRequest.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/UpdateMedicalConditionsRequest/1.0">
+            <xs:include schemaLocation="UpdateMedicalConditionsRequest.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/InsertMedicalContactResponse/1.0">
+            <xs:include schemaLocation="InsertMedicalContactResponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/InsertMedicalConditionResponse/1.0">
+            <xs:include schemaLocation="InsertMedicalConditionsResponse.xsd"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://services.gmg.com/UpdateMedicalConditionsResponse/1.0">
+            <xs:include schemaLocation="UpdateMedicalConditionsResponse.xsd"/>
+        </xs:schema>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://piglet.healthcodex.com/ChangePasswordRequest/1.0">
+            <xs:include schemaLocation="ChangePasswordRequest.xsd"/>
+        </xs:schema>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://piglet.healthcodex.com/ChangePasswordResponse/1.0">
+            <xs:include schemaLocation="ChangePasswordResponse.xsd"/>
+        </xs:schema>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://piglet.healthcodex.com/ResetPasswordRequest/1.0">
+            <xs:include schemaLocation="ResetPasswordRequest.xsd"/>
+        </xs:schema>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://piglet.healthcodex.com/ResetPasswordResponse/1.0">
+            <xs:include schemaLocation="ResetPasswordResponse.xsd"/>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:service name="drIDme">
+        <wsdl:port binding="tns:DridmePortTypeEndpoint1Binding" name="DridmePortTypeEndpoint1">
+            <soap:address location="http://localhost:8080/dridmews/DridmePortTypeEndpoint1"/>
+        </wsdl:port>
+    </wsdl:service>
+    <wsdl:portType name="DridmePortType">
+        <wsdl:operation name="DeleteMedicalContact">
+            <wsdl:input message="tns:DeleteMedicalContactRequest"/>
+            <wsdl:output message="tns:DeleteMedicalContactResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetMedicalContacts">
+            <wsdl:input message="tns:GetMedicalContactsRequest"/>
+            <wsdl:output message="tns:GetMedicalContactsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="InsertMedicalRecord">
+            <wsdl:input message="tns:InsertMedicalRecordRequest"/>
+            <wsdl:output message="tns:InsertMedicalRecordResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="UpdateMedicalCondition">
+            <wsdl:input message="tns:UpdateMedicalConditionsRequest"/>
+            <wsdl:output message="tns:UpdateMedicalConditionsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetLogin">
+            <wsdl:input message="tns:LoginRequest"/>
+            <wsdl:output message="tns:LoginResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetUserProfile">
+            <wsdl:input message="tns:GetUserRequest"/>
+            <wsdl:output message="tns:UserResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="DeleteMedicalCondition">
+            <wsdl:input message="tns:DeleteMedicalConditionRequest"/>
+            <wsdl:output message="tns:DeleteMedicalConditionResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="InsertMedicalContact">
+            <wsdl:input message="tns:InsertMedicalContactRequest"/>
+            <wsdl:output message="tns:InsertMedicalContactResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="UpdateUserProfile">
+            <wsdl:input message="tns:UserRequest"/>
+            <wsdl:output message="tns:UpdateUserResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetMedicalRecords">
+            <wsdl:input message="tns:GetMedicalRecordsRequest"/>
+            <wsdl:output message="tns:GetMedicalRecordsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetMedicalConditions">
+            <wsdl:input message="tns:GetMedicalConditionsRequest"/>
+            <wsdl:output message="tns:GetMedicalConditionsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="InsertMedicalCondition">
+            <wsdl:input message="tns:InsertMedicalConditionRequest"/>
+            <wsdl:output message="tns:InsertMedicalConditionResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="UpdateMedicalContact">
+            <wsdl:input message="tns:UpdateMedicalContactRequest"/>
+            <wsdl:output message="tns:UpdateMedicalContactResponse"/>
+        </wsdl:operation>
+		<wsdl:operation name="ChangePassword">
+            <wsdl:input message="tns:ChangePasswordRequest"/>
+            <wsdl:output message="tns:ChangePasswordResponse"/>
+        </wsdl:operation>
+		<wsdl:operation name="ResetPassword">
+            <wsdl:input message="tns:ResetPasswordRequest"/>
+            <wsdl:output message="tns:ResetPasswordResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="DridmePortTypeEndpoint1Binding" type="tns:DridmePortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="DeleteMedicalContact">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/DeleteMedicalContact" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetMedicalContacts">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/GetMedicalContacts" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="InsertMedicalRecord">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/InsertMedicalRecord" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="UpdateMedicalCondition">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/UpdateMedicalCondition" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetLogin">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/GetLogin" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetUserProfile">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/GetUserProfile" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="DeleteMedicalCondition">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/DeleteMedicalCondition" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="InsertMedicalContact">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/InsertMedicalContact" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="UpdateUserProfile">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/UpdateUserProfile" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetMedicalRecords">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/GetMedicalRecords" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetMedicalConditions">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/GetMedicalConditions" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="InsertMedicalCondition">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/InsertMedicalCondition" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="UpdateMedicalContact">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/UpdateMedicalContact" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+		<wsdl:operation name="ChangePassword">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/ChangePassword" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+		<wsdl:operation name="ResetPassword">
+            <soap:operation soapAction="/DridmePortTypeEndpoint/ResetPassword" style="document"/>
+            <wsdl:input>
+                <soap:body parts="input" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="output" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:message name="DeleteMedicalContactRequest">
+        <wsdl:part element="ns:DeleteMedicalContactRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="DeleteMedicalContactResponse">
+        <wsdl:part element="ns1:DeleteMedicalContactResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="GetMedicalContactsRequest">
+        <wsdl:part element="ns2:GetMedicalContactsRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="GetMedicalContactsResponse">
+        <wsdl:part element="ns3:GetMedicalContactsResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="InsertMedicalRecordRequest">
+        <wsdl:part element="ns4:InsertMedicalRecordRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="InsertMedicalRecordResponse">
+        <wsdl:part element="ns5:InsertMedicalRecordResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="UpdateMedicalConditionsRequest">
+        <wsdl:part element="ns6:UpdateMedicalConditionsRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="UpdateMedicalConditionsResponse">
+        <wsdl:part element="ns7:UpdateMedicalConditionsResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="LoginRequest">
+        <wsdl:part element="ns8:LoginRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="LoginResponse">
+        <wsdl:part element="ns9:LoginResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="GetUserRequest">
+        <wsdl:part element="ns10:GetUserRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="UserResponse">
+        <wsdl:part element="ns11:UserResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="DeleteMedicalConditionRequest">
+        <wsdl:part element="ns12:DeleteMedicalConditionRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="DeleteMedicalConditionResponse">
+        <wsdl:part element="ns13:DeleteMedicalConditionResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="InsertMedicalContactRequest">
+        <wsdl:part element="ns14:InsertMedicalContactRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="InsertMedicalContactResponse">
+        <wsdl:part element="ns15:InsertMedicalContactResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="UserRequest">
+        <wsdl:part element="ns16:UserRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="UpdateUserResponse">
+        <wsdl:part element="ns17:UpdateUserResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="GetMedicalRecordsRequest">
+        <wsdl:part element="ns18:GetMedicalRecordsRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="GetMedicalRecordsResponse">
+        <wsdl:part element="ns19:GetMedicalRecordsResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="GetMedicalConditionsRequest">
+        <wsdl:part element="ns20:GetMedicalConditionsRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="GetMedicalConditionsResponse">
+        <wsdl:part element="ns21:GetMedicalConditionsResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="InsertMedicalConditionRequest">
+        <wsdl:part element="ns22:InsertMedicalConditionRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="InsertMedicalConditionResponse">
+        <wsdl:part element="ns23:InsertMedicalConditionResponse" name="output"/>
+    </wsdl:message>
+    <wsdl:message name="UpdateMedicalContactRequest">
+        <wsdl:part element="ns24:UpdateMedicalContactRequest" name="input"/>
+    </wsdl:message>
+    <wsdl:message name="UpdateMedicalContactResponse">
+        <wsdl:part element="ns25:UpdateMedicalContactResponse" name="output"/>
+    </wsdl:message>
+	<wsdl:message name="ChangePasswordRequest">
+        <wsdl:part element="ns26:ChangePasswordRequest" name="input"/>
+    </wsdl:message>
+	<wsdl:message name="ChangePasswordResponse">
+        <wsdl:part element="ns27:ChangePasswordResponse" name="output"/>
+    </wsdl:message>
+	<wsdl:message name="ResetPasswordRequest">
+        <wsdl:part element="ns28:ResetPasswordRequest" name="input"/>
+    </wsdl:message>
+	<wsdl:message name="ResetPasswordResponse">
+        <wsdl:part element="ns29:ResetPasswordResponse" name="output"/>
+    </wsdl:message>
+</wsdl:definitions>
